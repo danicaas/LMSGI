@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Actividad semana 22 parte 2</title>
+        <script>
+            function iterar(){
+                for(var contador=1;contador<=5;contador++){
+                    var numero = prompt("Escriba un número del 1 al 10","Escribe aquí");
+                    if(numero<11){
+                        if(contador>=5){
+                            alert("¡El contador ha llegado a 5! Su número final es "+numero);
+                            document.write("<br/>"+"El último número introducido ha sido: " +numero+" y su contador finalizó al llegar a "+contador);
+                            document.write("<br/>"+"Si desea empezar de nuevo actualice la página");
+                        }
+                        else{
+                            document.write("<br/>"+"El número introducido ha sido: " +numero+" y su contador es "+contador);
+                        }
+                    }
+                    else {
+                        alert("El dato introducido no es correcto");
+                        contador--
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <section>
+            <span onclick="iterar()">Pulse aquí para comenzar</span>
+        </section>
+    </body>
+</html>
